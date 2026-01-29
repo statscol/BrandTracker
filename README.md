@@ -2,6 +2,8 @@
 
 BrandTracker is a sports video analysis application that uses Google's Gemini Vision LLM to automatically detect and track sponsor logos in match footage. It provides detailed reports on "time-on-screen" and detection counts for each sponsor.
 
+![BrandTracker Dashboard](frontend/demo_img.png)
+
 ## Features
 
 *   **Video Upload**: Upload local video files (MP4, MOV, etc.).
