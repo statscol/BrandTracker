@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+opencv-python
+numpy
+sqlalchemy
+google-generativeai
+yt-dlp
+thefuzz
+python-levenshtein
