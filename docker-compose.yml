@@ -1,0 +1,21 @@
+services:
+  backend:
+    build: 
+      context: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    volumes:
+      - ./backend/uploads:/app/backend/uploads
+      - ./backend/marktracker.db:/app/backend/marktracker.db # Persist DB (optional, but good for dev)
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    environment:
+      - VITE_API_URL=http://backend:8000 # If we do server-side rendering or proxying, irrelevant for client-side fetch but good practice.

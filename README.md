@@ -59,6 +59,27 @@ BrandTracker is a sports video analysis application that uses Google's Gemini Vi
     *   Upload a video or paste a YouTube link.
     *   View the analysis results on the dashboard.
 
+## Docker Support (Recommended)
+
+Run the entire application in isolated containers with a single command.
+
+### 1. Set your API Key
+You must set the `GEMINI_API_KEY` environment variable before running Docker.
+
+```bash
+export GEMINI_API_KEY="AIzaSy..." # Replace with your actual key
+```
+
+### 2. Run with Docker Compose
+```bash
+docker-compose up --build
+```
+This will start:
+*   **Backend**: `http://localhost:8000`
+*   **Frontend**: `http://localhost:5173`
+
+Access the application at **[http://localhost:5173](http://localhost:5173)**.
+
 ## License
 
 MIT

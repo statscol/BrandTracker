@@ -8,3 +8,4 @@ google-generativeai
 yt-dlp
 thefuzz
 python-levenshtein
+Pillow
