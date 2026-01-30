@@ -1,11 +1,43 @@
-fastapi
-uvicorn
-python-multipart
-opencv-python
-numpy
-sqlalchemy
-google-generativeai
-yt-dlp
-thefuzz
-python-levenshtein
-Pillow
+# Core web framework
+fastapi==0.128.0
+uvicorn==0.40.0
+starlette==0.50.0
+python-multipart==0.0.22
+
+# Computer vision and image processing
+opencv-python==4.13.0.90
+numpy==2.4.1
+Pillow==12.1.0
+
+# Database
+sqlalchemy==2.0.46
+
+# Google Gemini AI (deprecated - consider migrating to google-genai)
+google-generativeai==0.8.6
+google-ai-generativelanguage==0.6.15
+google-api-core==2.29.0
+google-api-python-client==2.188.0
+google-auth==2.48.0
+google-auth-httplib2==0.3.0
+googleapis-common-protos==1.72.0
+grpcio==1.76.0
+grpcio-status==1.71.2
+proto-plus==1.27.0
+protobuf==5.29.5
+
+# YouTube video download
+yt-dlp==2026.1.29
+
+# Fuzzy string matching
+thefuzz==0.22.1
+python-levenshtein==0.27.3
+rapidfuzz==3.14.3
+levenshtein==0.27.3
+
+# Utilities
+requests==2.32.5
+click==8.3.1
+tqdm==4.67.1
+pydantic==2.12.5
+pydantic-core==2.41.5
+typing-extensions==4.15.0
